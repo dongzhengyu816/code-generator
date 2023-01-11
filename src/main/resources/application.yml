@@ -4,8 +4,9 @@ message:
   list:
     - fieldList:
         - fieldName: pre
-          bits: 24
+          bits: 222
           fieldType: Bit
+          notes: pre的报文
       length: 1
       innerClassName:
 
@@ -13,96 +14,7 @@ message:
         - fieldName: prn
           bits: 6
           fieldType: Bit
+          notes: pre的报文
       length: 1
       innerClassName:
 
-    - fieldList:
-        - fieldName: mesType
-          bits: 6
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: sow
-          bits: 18
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: wn
-          bits: 13
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: dif
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: sif
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: aif
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: sisMai
-          bits: 4
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: difTwo
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: sifTwo
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: aifTwo
-          bits: 1
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: iode
-          bits: 8
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: ephemeris
-          bits: 203
-          fieldType: Bit
-      length: 1
-      innerClassName:
-
-    - fieldList:
-        - fieldName: crc
-          bits: 24
-          fieldType: Bit
-      length: 1
-      innerClassName:

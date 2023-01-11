@@ -60,6 +60,7 @@ public class CodeGenerate implements ApplicationRunner {
             dataMap.put("entityName",config.getEntityName()+"Entity");
             dataMap.put("decodeName",config.getEntityName()+"Decode");
             dataMap.put("fieldGroupList", messageConstruct.getList());
+
             //生成常量类代码
             outputFile("Constants.ftl",config.getEntityName()+"Field"+".java",CONSTANCE_TEMPLATE_PATH,CLASS_PATH,dataMap);
             //生成枚举类代码

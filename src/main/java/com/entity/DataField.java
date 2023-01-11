@@ -10,7 +10,20 @@ import lombok.Data;
  **/
 @Data
 public class DataField {
+    /***
+     * 注释
+     */
+    private String notes;
+    /***
+     * 字段名字
+     */
     private String fieldName;
+    /***
+     * 字段长度
+     */
     private int bits;
+    /***
+     * 字段类型，Bit，UInt，Int，IntS
+     */
     private String fieldType;
 }

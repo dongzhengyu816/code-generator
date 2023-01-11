@@ -5,6 +5,9 @@ import lombok.Data;
 public class ${entityName}{
 <#list fieldGroupList as fieldGroup><#if fieldGroup.innerClassName == "">
 <#list fieldGroup.fieldList as DataField>
+    /***
+     * ${DataField.notes}
+     */
     <#if fieldGroup.length != "1">
         <#if DataField.bits < 32>
     private int[] ${DataField.fieldName} = new int[${fieldGroup.length}];
@@ -28,6 +31,9 @@ public class ${entityName}{
     @Data
     class ${fieldGroup.innerClassName}{
     <#list fieldGroup.fieldList as DataField>
+    /***
+    * ${DataField.notes}
+    */
     <#if DataField.bits < 32>
         private int ${DataField.fieldName};
     <#elseif DataField.bits < 64>
