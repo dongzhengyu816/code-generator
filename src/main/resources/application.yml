@@ -1,20 +1,30 @@
 #由于九大类报文没有内部类数组的情况，所以length默认为1 innerClassName 默认为空
 #使用方法 按顺序 添加数据段信息 只用修改fieldName bits 和 fieldType
+# b1c子帧3页面1
 message:
   list:
     - fieldList:
-        - fieldName: pre
-          bits: 222
+        - fieldName: pageId
+          bits: 6
           fieldType: Bit
-          notes: pre的报文
+          notes: 页面类型
+      length: 1
+      innerClassName:
+    - fieldList:
+        - fieldName: hs
+          bits: 2
+          fieldType: Bit
+          notes: 卫星健康状态
       length: 1
       innerClassName:
 
     - fieldList:
-        - fieldName: prn
-          bits: 6
+        - fieldName: dif
+          bits: 35
           fieldType: Bit
-          notes: pre的报文
+          notes: 卫星完好性状态采用电文完好性标识
       length: 1
       innerClassName:
+
+
 

@@ -15,17 +15,25 @@
 | fieldType | String，可选值为UInt，IntS，Bit，Int | 字段类型 |
 | notes     | String                               | 字段注释 |
 
+**具体的示例可以参照示例的application.yml**
+
+
+
 2.修改config.properties中的entityName值，该值为生成文件的类名，可以定义为报文的名字
 
 
 
 2.定义完成后，启动springboot项目，生成的代码会在result包中出现
 
+**注意：代码result包中我保留了自动生成的解析文件，供使用者参考。**
+
 
 
 
 
 ## 词汇表
+
+> 对于属性变量的命名方式，下方给出一些参考
 
 1.对于希腊字母，采取的命名用对应读法来表示
 
@@ -49,8 +57,8 @@
 
 下面举几个命名例子
 
-| 字段名            | java的命名      |
-| ----------------- | --------------- |
+| 字段名            | java的命名         |
+| ----------------- |-----------------|
 | $\Omega_0$        | omega_0         |
 | $SISAIocb~$       | sisai_ocb       |
 | $\Delta \dot n_0$ | deltaN\$dot\$_0 |
