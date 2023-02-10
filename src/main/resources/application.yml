@@ -2,27 +2,46 @@
 #使用方法 按顺序 添加数据段信息 只用修改fieldName bits 和 fieldType
 # b1c子帧3页面1
 message:
+  packagePath: L2
+  entityName: L2SubFrame2page4
+  HighByteFirst: true
   list:
     - fieldList:
         - fieldName: pageId
           bits: 6
           fieldType: Bit
           notes: 页面类型
+          baseNumber: 2
+          indexNumber: -4
+          existRange: true
+          rangeMinNumber: 1.1
+          rangeMaxNumber: 15.4545
       length: 1
       innerClassName:
+
     - fieldList:
         - fieldName: hs
-          bits: 2
-          fieldType: Bit
+          bits: 10
+          fieldType: IntS
           notes: 卫星健康状态
+          baseNumber: 1
+          indexNumber: 0
+          existRange: false
+          rangeMinNumber: 3.1212
+          rangeMaxNumber: 154545.0
       length: 1
       innerClassName:
 
     - fieldList:
         - fieldName: dif
-          bits: 35
+          bits: 40
           fieldType: Bit
           notes: 卫星完好性状态采用电文完好性标识
+          baseNumber: 10
+          indexNumber: -1
+          existRange: false
+          rangeMinNumber: 3.1212
+          rangeMaxNumber: 154545.0
       length: 1
       innerClassName:
 

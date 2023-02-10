@@ -64,7 +64,7 @@
         </plugins>
         <resources>
             <resource>
-                <directory>src/main/java/com/template</directory>
+                <directory>src/main/java/xdpp/template</directory>
                 <includes>
                     <include>**/*.ftl</include>
                 </includes>
